@@ -18,7 +18,7 @@ if st.button("Ask Gemini", type="primary"):
     else:
         with st.spinner("Thinking..."):
             interaction = client.interactions.create(
-                model="gemini-3.8-flash-tts",
+                model="gemini-3.5-flash-lite",
                 input=question,
             )
         st.markdown(interaction.output_text)
